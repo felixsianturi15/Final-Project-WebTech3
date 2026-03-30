@@ -264,7 +264,7 @@ class Suggest extends React.Component {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomeWithToggleFunctional />} />
@@ -272,7 +272,7 @@ const App = () => {
         <Route path="/suggest" element={<Suggest />} />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
